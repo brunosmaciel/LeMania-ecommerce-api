@@ -1,11 +1,11 @@
 import express from 'express';
 import { config } from 'dotenv';
 import mongoose from 'mongoose';
-import homeRoute from './src/routes/home';
-import customerRoute from './src/routes/customers';
-import productRoute from './src/routes/products';
-import cartRoutes from './src/routes/carts';
-import adminRoute from './src/routes/admin';
+import homeRoute from './routes/home';
+import customerRoute from './routes/customers';
+import productRoute from './routes/products';
+import cartRoutes from './routes/carts';
+import adminRoute from './routes/admin';
 
 config();
 const app = express();
