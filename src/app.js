@@ -9,7 +9,7 @@ import adminRoute from './routes/admin';
 
 config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5050;
 mongoose.connect(process.env.CONNECTIONSTRING, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
